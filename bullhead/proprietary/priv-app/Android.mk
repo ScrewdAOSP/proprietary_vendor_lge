@@ -1,4 +1,4 @@
-# Copyright (C) 2016 The PureNexus Project
+# Copyright (C) 2017 The PureNexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,16 +22,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := atfwd
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := atfwd/atfwd.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := CarrierEntitlement
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := CarrierEntitlement/CarrierEntitlement.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -119,9 +109,9 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := HotwordEnrollment
+LOCAL_MODULE := HotwordEnrollmentWCD9330
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := HotwordEnrollment/HotwordEnrollment.apk
+LOCAL_SRC_FILES := HotwordEnrollmentWCD9330/HotwordEnrollmentWCD9330.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
