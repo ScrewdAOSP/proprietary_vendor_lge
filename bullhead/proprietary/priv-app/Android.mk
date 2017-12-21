@@ -1,4 +1,5 @@
-# Copyright (C) 2017 The PureNexus Project
+# Copyright (C) 2016 The PureNexus Project
+# Copyright (C) 2017 Alliance
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -92,6 +93,16 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := DMService
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := DMService/DMService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Entitlement
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := Entitlement/Entitlement.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true

@@ -1,4 +1,5 @@
-# Copyright (C) 2017 The Pure Nexus Project
+# Copyright (C) 2016 The Pure Nexus Project
+# Copyright (C) 2017 Alliance
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -34,7 +35,6 @@ PRODUCT_PACKAGES += \
 # Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
     atfwd \
-    CarrierEntitlement \
     CarrierServices \
     CNEService \
     ConnMO \
@@ -42,6 +42,7 @@ PRODUCT_PACKAGES += \
     DiagMon \
     DMConfigUpdate \
     DMService \
+    Entitlement \
     GCS \
     HotwordEnrollmentWCD9330 \
     LifeTimerService \
